@@ -8,7 +8,7 @@
     $tempo = $_POST["tempo"];
 
     if($tipo == "a"){
-        $_SESSION["carro"]["$id"]->acelerar($tempo,$aceleracao_frenagem);
+        $_SESSION["carro"]["$id"]->acelerar($tempo,$aceleracao_frenagem); // Chama a "public function" de mesmo nome que foi atribuida ao objeto 
     }else{
         $_SESSION["carro"]["$id"]->frear($tempo,$aceleracao_frenagem);
     }
