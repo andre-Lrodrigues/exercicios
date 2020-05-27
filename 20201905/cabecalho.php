@@ -7,4 +7,8 @@
     </head>
         <body>
             <section>
-                <form method="post" action="recebe_form_produto.php">
+                <nav>
+                    <a href="index.php">CADSASTRAR</a> | 
+                    <a href="listar.php">LISTAR</a> | 
+                    <b><a href="destroi.php" id="aviso">APAGAR TUDO</a></b>
+                </nav>

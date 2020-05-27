@@ -38,3 +38,13 @@ p{
 *{
 	box-sizing: border-box;
 }
+nav {
+    font-size: 17px;
+}
+#aviso{
+    color: red;
+}
+.exibe{
+    font-size: 25px;
+    text-align: left;
+}

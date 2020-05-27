@@ -1,20 +1,19 @@
-<?php
-    include "classeProduto.php";
-    session_start();
-
+<?php    
     if($_POST["produto"] == 'Livro'){
+        include "classeLivro.php";
         $p = new Livro($_POST);
     }
     elseif($_POST["produto"] == 'Filme'){
+        include "classeFilme.php";
         $p = new Filme($_POST);
     }
+    session_start();
 
     $_SESSION["produto"][] = $p;
-
-    // var_dump($_SESSION["produto"]);
-
-    echo '<script>
-             window.alert("Produto cadastrado com sucesso! \nRedirecionando para página de seleção.");
-             window.location.href = "index.html";
-          </script>';
 ?>
+
+<meta charset="UTF-8" />
+<script>
+    window.alert("Produto cadastrado com sucesso! \nRedirecionando para página inicial de seleção.");
+    window.location.href = "index.php";
+</script>

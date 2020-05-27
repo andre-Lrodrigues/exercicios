@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Cadastro</title>
-        <link rel="stylesheet" type="text/css"  href="estilos.css" />
-    </head>
-    <body>
-        <section>
-            <p>Cadastro de Produtos</p>
+<?php
+    include "cabecalho.php"
+?>
+            <p>Bem Vindo ao sistema de cadastro</p>
             <form method="post" action="form_cadastro.php">
                 <select name="produto" required>
                     <option hidden value="">::Escolha o Produto::</option>

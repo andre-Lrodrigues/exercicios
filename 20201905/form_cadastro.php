@@ -2,6 +2,7 @@
     include "classeInput.php";
     include "classeTextarea.php";
     include "cabecalho.php";
+    echo '<form method="post" action="recebe_form_produto.php">';
 
     $valor["type"] = "text";
     $valor["name"] = "titulo";
@@ -12,12 +13,14 @@
     
         $i = new Input($valor);
 
+        $valor = null;
         $valor["type"] = "number";
         $valor["name"] = "duracao";
         $valor["placeholder"] = "Tempo do duração (min)...";
 
         $i = new Input($valor);
 
+        $valor = null;
         $valor["type"] = "text";
         $valor["name"] = "produtora";
         $valor["placeholder"] = "Produtora...";
@@ -30,12 +33,14 @@
     
         $i = new Input($valor);
 
+        $valor = null;
         $valor["type"] = "number";
         $valor["name"] = "paginas";
         $valor["placeholder"] = "Número de páginas...";
 
         $i = new Input($valor);
 
+        $valor = null;
         $valor["type"] = "text";
         $valor["name"] = "editora";
         $valor["placeholder"] = "Editora...";
@@ -43,6 +48,7 @@
         $i = new Input($valor);
     }
 
+    $valor = null;
     $valor["name"] = "sinopse";
     $valor["rows"] = 3;
     $valor["cols"] = 30;
@@ -50,12 +56,14 @@
 
     $t = new Textarea($valor);
 
+    $valor = null;
     $valor["type"] = "number";
     $valor["name"] = "preco";
     $valor["placeholder"] = "Preço...";
 
     $i = new Input($valor);
 
+    $valor = null;
     $valor["type"] = "submit";
     $valor["value"] = "Cadastrar";
 
