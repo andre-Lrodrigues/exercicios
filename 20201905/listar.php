@@ -4,7 +4,7 @@
     include "cabecalho.php";
     session_start();
 
-    if(!empty($_SESSIUON["produto"])){
+    if(!empty($_SESSION["produto"])){
 
         echo '<p><b>Lista de produtos</b></p>';
         foreach($_SESSION["produto"] as $p){
